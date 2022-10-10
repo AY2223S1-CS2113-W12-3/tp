@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SetCommandTest {
 
     @Test
-    void execute_ValidSetArguments_UpdatedBiometrics() {
+    void execute_validSetArguments_updatedBiometrics() {
         Biometrics biometrics = new Biometrics();
         Ui ui = new Ui();
         String command = "set biometrics";
@@ -33,7 +33,7 @@ class SetCommandTest {
     }
 
     @Test
-    void execute_NegativeInt_UnchangedBiometrics() {
+    void execute_negativeInt_unchangedBiometrics() {
         Biometrics biometrics = new Biometrics();
         Ui ui = new Ui();
         String command = "set biometrics";
@@ -56,7 +56,7 @@ class SetCommandTest {
     }
 
     @Test
-    void execute_InvalidGender_UnchangedBiometrics() {
+    void execute_invalidGender_unchangedBiometrics() {
         Biometrics biometrics = new Biometrics();
         Ui ui = new Ui();
         String command = "set biometrics";
